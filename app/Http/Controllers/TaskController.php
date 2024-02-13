@@ -19,7 +19,10 @@ class TaskController extends Controller
 
     public function show(Request $request, Task $task)
     {
-        return new TaskResource($task);
+        $tasks = QueryBuilder::for(Task::class)
+            ->allowedFilters('is_done')
+            ->paginate();
+        return new TaskResource($tasks);
     }
 
     public function store(StoreTaskRequest $request)
