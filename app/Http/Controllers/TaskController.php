@@ -28,4 +28,12 @@ class TaskController extends Controller
         $task = Task::create($validated);
         return new TaskResource($task);
     }
+
+    public function update(StoreTaskRequest $request, Task $task)
+    {
+        $validated = $request->validated();
+
+        $task->update($validated);
+        return new TaskResource($task);
+    }
 }
