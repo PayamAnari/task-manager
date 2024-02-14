@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -33,7 +34,7 @@ class AuthController extends Controller
         $validated = $request->validate([
             'name' => 'required|max:255',
             'email' => 'required|max:225|email|unique:users,email',
-            'password' => 'required|confirmed|max:6',
+            'password' => 'required|confirmed|min:6',
         ]);
 
         $user = User::create($validated);
@@ -42,6 +43,6 @@ class AuthController extends Controller
             'data' => $user,
             'access_token' => $user->createToken('api_token')->plainTextToken,
             'token_type' => 'Bearer',
-        ]);
+        ], 201);
     }
 }
