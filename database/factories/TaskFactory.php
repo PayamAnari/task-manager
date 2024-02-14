@@ -19,6 +19,10 @@ class TaskFactory extends Factory
         return [
             'title' => $this->faker->sentence,
             'is_done' => false,
+            'description' => $this->faker->paragraph,
+            'due_date' => $this->faker->dateTimeBetween('now', '+1 year'),
+            'location' => $this->faker->address,
+            'creator_id' => User::factory(),
         ];
     }
 }
