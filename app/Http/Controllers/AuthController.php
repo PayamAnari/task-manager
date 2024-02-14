@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller
@@ -19,6 +20,11 @@ class AuthController extends Controller
             ], 401);
         }
 
-        return response()->noContent(401);
+        $user = User::where('email', $validated['email'])->first();
+
+        return response()->json([
+            'access_token' => $user->createToken('api_token')->plainTextToken,
+            'token_type' => 'Bearer',
+        ]);
     }
 }
