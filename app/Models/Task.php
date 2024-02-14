@@ -12,13 +12,18 @@ class Task extends Model
     protected $fillable = [
         'title',
         'is_done',
+        'description',
+        'due_date',
+        'location',
+
     ];
 
     protected $casts = [
         'is_done' => 'boolean',
     ];
 
-    protected $hidden = [
-        'updated_at',
-    ];
+    public function creator(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'creator_id');
+    }
 }
