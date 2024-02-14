@@ -23,6 +23,9 @@ class StoreTaskRequest extends FormRequest
     {
         return [
             'title' => 'required|max:225',
+            'description' => 'nullable',
+            'due_date' => 'nullable|date',
+            'location' => 'nullable',
         ];
     }
 }
