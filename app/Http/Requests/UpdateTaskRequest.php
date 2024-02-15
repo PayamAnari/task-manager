@@ -27,6 +27,13 @@ class UpdateTaskRequest extends FormRequest
             'description' => 'sometimes|nullable|string',
             'due_date' => 'sometimes|nullable|date',
             'location' => 'sometimes|nullable|string',
+            'project_id' => [
+                'nullable',
+                Rule::exists('projects', 'id')->where(function ($query) {
+                    $query->where('creator_id', Auth::id());
+                }),
+            ],
+
         ];
     }
 }
