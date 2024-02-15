@@ -22,7 +22,7 @@ class UpdateProjectRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'title' => 'sometimes|required|max:225',
         ];
     }
 }
