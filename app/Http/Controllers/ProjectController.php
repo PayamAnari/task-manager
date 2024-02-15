@@ -33,7 +33,7 @@ class ProjectController extends Controller
 
     public function show(Request $request, Project $project)
     {
-        return new ProjectResource($project);
+        return (new ProjectResource($project))->load('tasks');
     }
 
     public function update(UpdateProjectRequest $request, Project $project)
@@ -43,5 +43,12 @@ class ProjectController extends Controller
         $project->update($validated);
 
         return new ProjectResource($project);
+    }
+
+    public function destroy(Request $request, Project $project)
+    {
+        $project->delete();
+
+        return response()->noContent();
     }
 }
