@@ -21,8 +21,9 @@ class ProjectController extends Controller
 
     public function update(UpdateProjectRequest $request, Project $project)
     {
-        $project = Project::findOrFail($request->id);
-        $project->update($request->validated());
+        $validated = $request->validated();
+
+        $project->update($validated);
 
         return new ProjectResource($project);
     }
