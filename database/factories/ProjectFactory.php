@@ -19,6 +19,8 @@ class ProjectFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(),
+            'manager' => $this->faker->name(),
+            'members' => $this->faker->numberBetween(1, 10),
             'creator_id' => User::factory(),
         ];
     }

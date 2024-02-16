@@ -23,6 +23,8 @@ class StoreProjectRequest extends FormRequest
     {
         return [
             'title' => 'required|max:225',
+            'manager' => 'required|max:225',
+            'members' => 'required|integer',
         ];
     }
 }

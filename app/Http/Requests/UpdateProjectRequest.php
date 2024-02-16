@@ -23,6 +23,8 @@ class UpdateProjectRequest extends FormRequest
     {
         return [
             'title' => 'sometimes|required|max:225',
+            'manager' => 'sometimes|required|max:225',
+            'members' => 'sometimes|required|array',
         ];
     }
 }
