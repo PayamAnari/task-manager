@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
+
     public function login(Request $request)
     {
         $validated = $request->validate([
@@ -44,5 +45,40 @@ class AuthController extends Controller
             'access_token' => $user->createToken('api_token')->plainTextToken,
             'token_type' => 'Bearer',
         ], 201);
+    }
+
+    public function destroy($userId)
+    {
+
+        $user = User::find($userId);
+        if (!$user) {
+            return response()->json(['message' => 'User not found'], 404);
+        }
+        $user->projects()->delete();
+
+        $user->tokens()->delete();
+        $user->tasks()->delete();
+
+        $user->delete();
+
+        return response()->noContent();
+    }
+
+    public function update(Request $request, $userId)
+    {
+        $user = User::find($userId);
+        if (!$user) {
+            return response()->json(['message' => 'User not found'], 404);
+        }
+
+        $validated = $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|max:225|email|unique:users,email,' . $userId,
+            'password' => 'required|confirmed|min:6',
+        ]);
+
+        $user->update($validated);
+
+        return response()->json(['data' => $user]);
     }
 }
