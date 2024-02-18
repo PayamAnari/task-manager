@@ -78,3 +78,9 @@ Welcome to the Laravel Task Manager, a comprehensive project management system d
 - **ProjectResource:** Transforms a single project for API responses, including associated tasks.
 - **TaskCollection:** Transforms a collection of tasks for API responses.
 - **TaskResource:** Transforms a single task for API responses, including additional computed attributes.
+
+### Models
+
+- **Project:** Represents a project entity in the database, including relationships with tasks and users.
+- **Task:** Represents a task entity in the database, including relationships with projects and users.
+- **User:** Represents a user entity in the database, including relationships with tasks and projects.
