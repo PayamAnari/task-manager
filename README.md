@@ -117,3 +117,12 @@ Route::middleware('auth:sanctum')->group(function () {
 });
 
 ```
+
+## Endpoints
+
+### Authentication
+
+- **POST /api/login:** Login with email and password.
+- **POST /api/register:** Register a new user.
+- **DELETE /api/users/{userId}:** Delete a user account.
+- **PUT /api/users/{userId}:** Update user information.
