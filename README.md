@@ -71,3 +71,10 @@ Welcome to the Laravel Task Manager, a comprehensive project management system d
 - **UpdateProjectRequest:** Validates and handles requests for updating existing projects.
 - **StoreTaskRequest:** Validates and handles requests for storing new tasks.
 - **UpdateTaskRequest:** Validates and handles requests for updating existing tasks.
+
+### Resources
+
+- **ProjectCollection:** Transforms a collection of projects for API responses.
+- **ProjectResource:** Transforms a single project for API responses, including associated tasks.
+- **TaskCollection:** Transforms a collection of tasks for API responses.
+- **TaskResource:** Transforms a single task for API responses, including additional computed attributes.
