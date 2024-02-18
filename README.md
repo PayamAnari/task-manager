@@ -64,3 +64,10 @@ Welcome to the Laravel Task Manager, a comprehensive project management system d
 - **ProjectController:** Handles project-related HTTP requests, including index, store, show, update, and destroy operations.
 - **TaskController:** Handles task-related HTTP requests, including index, store, show, update, and destroy operations.
 - **AuthController:** Handles user authentication and account management endpoints, including login, registration, updating, and deletion.
+
+### Requests
+
+- **StoreProjectRequest:** Validates and handles requests for storing new projects.
+- **UpdateProjectRequest:** Validates and handles requests for updating existing projects.
+- **StoreTaskRequest:** Validates and handles requests for storing new tasks.
+- **UpdateTaskRequest:** Validates and handles requests for updating existing tasks.
