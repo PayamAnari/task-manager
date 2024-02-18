@@ -4,3 +4,14 @@
     alt="task-manager"
     src="https://live.staticflickr.com/65535/53536587878_9c224bccf2_m.jpg">
 </h1>
+
+---
+
+<h3 align="center">
+  <strong>
+      ⚙️ Laravel Task-Manager ⚙️
+
+  </strong>
+</h3>
+
+---
