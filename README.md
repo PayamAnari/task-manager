@@ -134,3 +134,11 @@ Route::middleware('auth:sanctum')->group(function () {
 - **GET /api/projects/{projectId}:** Get a single project by its ID. (Requires authentication)
 - **PUT /api/projects/{projectId}:** Update an existing project. (Requires authentication)
 - **DELETE /api/projects/{projectId}:** Delete a project by its ID. (Requires authentication)
+
+### Tasks
+
+- **GET /api/tasks:** Get a list of all tasks. (Requires authentication)
+- **POST /api/tasks:** Create a new task. (Requires authentication)
+- **GET /api/tasks/{taskId}:** Get a single task by its ID. (Requires authentication)
+- **PUT /api/tasks/{taskId}:** Update an existing task. (Requires authentication)
+- **DELETE /api/tasks/{taskId}:** Delete a task by its ID. (Requires authentication)
