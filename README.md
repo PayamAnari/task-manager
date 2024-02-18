@@ -46,3 +46,11 @@ Welcome to the Laravel Task Manager, a comprehensive project management system d
 - **CRUD Operations:** Perform Create, Read, Update, and Delete operations on tasks within projects.
 - **Relationships:** Establish relationships between tasks and projects for structured task management.
 - **Additional Attributes:** Compute additional attributes for tasks, enhancing their description and status.
+
+### User Management and Authentication
+
+- **User Registration:** Allow users to register for an account with their name, email, and password.
+- **User Login:** Enable secure login to user accounts using email and password.
+- **User Profile Management:** Provide endpoints for updating user information, such as name and email.
+- **User Account Deletion:** Allow users to delete their accounts, including associated tasks and projects.
+- **Token-based Authentication:** Authenticate users using token-based authentication with Laravel Sanctum.
