@@ -142,3 +142,15 @@ Route::middleware('auth:sanctum')->group(function () {
 - **GET /api/tasks/{taskId}:** Get a single task by its ID. (Requires authentication)
 - **PUT /api/tasks/{taskId}:** Update an existing task. (Requires authentication)
 - **DELETE /api/tasks/{taskId}:** Delete a task by its ID. (Requires authentication)
+
+---
+
+## Getting Started
+
+### To get started with this project:
+
+- Clone this repository to your local machine.
+- Configure your environment variables in the .env file.
+- Run migrations to set up the database schema: php artisan migrate.
+- Start the development server: php artisan serve.
+- Explore the project and its functionalities, including project and task management, and user authentication.
