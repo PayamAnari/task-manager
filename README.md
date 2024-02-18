@@ -41,3 +41,8 @@ Welcome to the Laravel Task Manager, a comprehensive project management system d
 - **Pagination, Filtering, and Sorting:** Efficiently handle large datasets with pagination, filtering, and sorting functionalities.
 - **Resource Management:** Utilize resource collections and resources to transform project data for API responses.
 
+### Task Management
+
+- **CRUD Operations:** Perform Create, Read, Update, and Delete operations on tasks within projects.
+- **Relationships:** Establish relationships between tasks and projects for structured task management.
+- **Additional Attributes:** Compute additional attributes for tasks, enhancing their description and status.
