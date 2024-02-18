@@ -191,3 +191,15 @@ Content-Type: application/json
   "creator_id": 1
 }
 ```
+### Login user
+
+```
+POST /api/login HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "password": "password"
+}
+```
