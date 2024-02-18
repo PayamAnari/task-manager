@@ -84,3 +84,9 @@ Welcome to the Laravel Task Manager, a comprehensive project management system d
 - **Project:** Represents a project entity in the database, including relationships with tasks and users.
 - **Task:** Represents a task entity in the database, including relationships with projects and users.
 - **User:** Represents a user entity in the database, including relationships with tasks and projects.
+
+### Migrations
+
+- **create_projects_table:** Defines the database schema for the projects table.
+- **create_tasks_table:** Defines the database schema for the tasks table.
+- **create_users_table:** Defines the database schema for the users table.
