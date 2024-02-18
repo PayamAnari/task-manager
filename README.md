@@ -29,3 +29,15 @@
 ### Description
 
 Welcome to the Laravel Task Manager, a comprehensive project management system designed to streamline project organization and task tracking within your organization. This application provides a robust set of functionalities for managing projects, tasks, and user authentication.
+
+---
+
+## Features
+
+### Project Management
+
+- **CRUD Operations:** Perform Create, Read, Update, and Delete operations on projects.
+- **Relationships:** Establish relationships between projects and tasks for efficient management and tracking.
+- **Pagination, Filtering, and Sorting:** Efficiently handle large datasets with pagination, filtering, and sorting functionalities.
+- **Resource Management:** Utilize resource collections and resources to transform project data for API responses.
+
