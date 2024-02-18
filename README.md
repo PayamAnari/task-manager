@@ -215,12 +215,12 @@ Content-Type: application/json
 - **Laravel sanctum** (Authentication)
 
   <p align="left">
-  <img src="https://img.shields.io/badge/laravel-FF3467?style=for-the-badge&logo=phpmyadmin&logoColor=white"/>
+  <img src="https://img.shields.io/badge/laravel-FF0000?style=for-the-badge&logo=phpmyadmin&logoColor=white"/>
   <img src="https://img.shields.io/badge/Php-00008B?style=for-the-badge&logo=phpmyadmin&logoColor=white"/>
   <img src="https://img.shields.io/badge/mysql-acace6?style=for-the-badge&logo=phpmyadmin&logoColor=white"/>
   <img src="https://img.shields.io/badge/Composer-0000FF?style=for-the-badge&logo=Composer&logoColor=white"/>
   <img src="https://img.shields.io/badge/Phpmyadmin-ffa500?style=for-the-badge&logo=phpmyadmin&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JWT-FF0000?style=for-the-badge&logo=phpmyadmin&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JWT-FF2578?style=for-the-badge&logo=phpmyadmin&logoColor=white"/>
  
 </p>
 
