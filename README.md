@@ -158,7 +158,7 @@ Route::middleware('auth:sanctum')->group(function () {
 ---
 
 ## Example Requests
-### Create a New Post (Authenticated Request)
+### Create a New Project (Authenticated Request)
 
 ```
 POST /api/projects HTTP/1.1
@@ -172,5 +172,22 @@ Content-Type: application/json
   "members": 4,
   "creator_id": 3
 }
+```
 
+### Create a New Task (Authenticated Request)
+
+```
+POST /api/tasks HTTP/1.1
+Host: example.com
+Authorization: Bearer your_access_token
+Content-Type: application/json
+
+{
+  "title": "New Task Title",
+  "is_done": true,
+  "description": "This is a new task.",
+  "due_date": "2024-02-20",
+  "location": "Amsterdam",
+  "creator_id": 1
+}
 ```
