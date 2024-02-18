@@ -203,3 +203,27 @@ Content-Type: application/json
   "password": "password"
 }
 ```
+
+---
+
+## Technologies Used
+- **Laravel** = 10
+- **PHP** >= 7.0
+- **MySQL**
+- **Composer** (for installing dependencies)
+- **PhpMyAdmin**
+- **Laravel sanctum** (Authentication)
+
+  <p align="left">
+  <img src="https://img.shields.io/badge/laravel-FF3467?style=for-the-badge&logo=phpmyadmin&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Php-00008B?style=for-the-badge&logo=phpmyadmin&logoColor=white"/>
+  <img src="https://img.shields.io/badge/mysql-acace6?style=for-the-badge&logo=phpmyadmin&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Composer-0000FF?style=for-the-badge&logo=Composer&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Phpmyadmin-ffa500?style=for-the-badge&logo=phpmyadmin&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JWT-FF0000?style=for-the-badge&logo=phpmyadmin&logoColor=white"/>
+ 
+</p>
+
+
+---
