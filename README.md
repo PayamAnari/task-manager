@@ -96,3 +96,7 @@ Welcome to the Laravel Task Manager, a comprehensive project management system d
 - **ProjectFactory:** Generates fake project data for testing purposes.
 - **TaskFactory:** Generates fake task data for testing purposes.
 - **UserFactory:** Generates fake user data for testing purposes.
+
+### Routes
+
+- API routes are defined to handle user authentication, registration, updating, and deletion, as well as project and task management functionalities.
