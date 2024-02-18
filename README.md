@@ -54,3 +54,13 @@ Welcome to the Laravel Task Manager, a comprehensive project management system d
 - **User Profile Management:** Provide endpoints for updating user information, such as name and email.
 - **User Account Deletion:** Allow users to delete their accounts, including associated tasks and projects.
 - **Token-based Authentication:** Authenticate users using token-based authentication with Laravel Sanctum.
+
+---
+
+## Project Structure
+
+### Controllers
+
+- **ProjectController:** Handles project-related HTTP requests, including index, store, show, update, and destroy operations.
+- **TaskController:** Handles task-related HTTP requests, including index, store, show, update, and destroy operations.
+- **AuthController:** Handles user authentication and account management endpoints, including login, registration, updating, and deletion.
