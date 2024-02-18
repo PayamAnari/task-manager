@@ -154,3 +154,23 @@ Route::middleware('auth:sanctum')->group(function () {
 - Run migrations to set up the database schema: php artisan migrate.
 - Start the development server: php artisan serve.
 - Explore the project and its functionalities, including project and task management, and user authentication.
+
+---
+
+## Example Requests
+### Create a New Post (Authenticated Request)
+
+```
+POST /api/projects HTTP/1.1
+Host: example.com
+Authorization: Bearer your_access_token
+Content-Type: application/json
+
+{
+  "title": "New Project",
+  "manager": "John Doe",
+  "members": 4,
+  "creator_id": 3
+}
+
+```
