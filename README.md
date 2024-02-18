@@ -90,3 +90,9 @@ Welcome to the Laravel Task Manager, a comprehensive project management system d
 - **create_projects_table:** Defines the database schema for the projects table.
 - **create_tasks_table:** Defines the database schema for the tasks table.
 - **create_users_table:** Defines the database schema for the users table.
+
+### Factories
+
+- **ProjectFactory:** Generates fake project data for testing purposes.
+- **TaskFactory:** Generates fake task data for testing purposes.
+- **UserFactory:** Generates fake user data for testing purposes.
