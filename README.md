@@ -24,3 +24,8 @@
 </p>
 
 ---
+
+## Laravel Task-Manager
+### Description
+
+Welcome to the Laravel Task Manager, a comprehensive project management system designed to streamline project organization and task tracking within your organization. This application provides a robust set of functionalities for managing projects, tasks, and user authentication.
