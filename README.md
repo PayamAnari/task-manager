@@ -147,10 +147,7 @@ Route::middleware('auth:sanctum')->group(function () {
 | *POST* | ```/api/tasks``` | _Create a new task_| _All users_| Authentication |
 | *GET* | ```/api/tasks/{taskId}``` | _Get a single task_| _All users_| Authentication |
 | *PUT* | ```/api/tasks/{taskId}``` | _Update an existing task_| _All users_| Authentication |
-
-
-- **PUT /api/tasks/{taskId}:** Update an existing task. (Requires authentication)
-- **DELETE /api/tasks/{taskId}:** Delete a task by its ID. (Requires authentication)
+| *DELETE* | ```/api/tasks/{taskId}``` | _Delete a task_| _All users_| Authentication |
 
 ---
 
