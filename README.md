@@ -133,12 +133,11 @@ Route::middleware('auth:sanctum')->group(function () {
 
 | METHOD | ROUTE | FUNCTIONALITY | ACCESS| REQUIRMENTS|
 | ------- | ----- | ------------- | ------------- | -------------- |
-| *GET* | ```/api/projects``` | _Get a list if all projects_| _All users_|
-
-- **GET /api/projects:** Get a list of all projects. (Requires authentication)
-- **POST /api/projects:** Create a new project. (Requires authentication)
-- **GET /api/projects/{projectId}:** Get a single project by its ID. (Requires authentication)
-- **PUT /api/projects/{projectId}:** Update an existing project. (Requires authentication)
+| *GET* | ```/api/projects``` | _Get a list if all projects_| _All users_| Authentication |
+| *POST* | ```/api/projects``` | _Create a new project_| _All users_| Authentication |
+| *GET* | ```/api/projects/{projectId}``` | _Get a single project by id_| _All users_| Authentication |
+| *PUT* | ```/api/projects/{projectId}``` | _Update an existing project_| _All users_| Authentication |
+| *PUT* | ```/api/projects/{projectId}``` | _Update an existing project_| _All users_| Authentication |
 - **DELETE /api/projects/{projectId}:** Delete a project by its ID. (Requires authentication)
 
 ### Tasks
