@@ -122,12 +122,18 @@ Route::middleware('auth:sanctum')->group(function () {
 
 ### Authentication
 
-- **POST /api/login:** Login with email and password.
-- **POST /api/register:** Register a new user.
-- **DELETE /api/users/{userId}:** Delete a user account.
-- **PUT /api/users/{userId}:** Update user information.
+| METHOD | ROUTE | FUNCTIONALITY |ACCESS|REQUIRMENTS|
+| ------- | ----- | ------------- | ------------- | ------------ |
+| *POST* | ```/api/login/``` | _Login with email and password_| _All users_| - |
+| *POST* | ```/api/register/``` | _Register a new user_| _All users_| - |
+| *DELETE* | ```/api/users/{userId}``` | _Delete a user account_| _All users_| Authentication |
+| *PUT* | ```/api/users/{userId}``` | _Update user details_| _All users_| Authentication |
 
 ### Projects
+
+| METHOD | ROUTE | FUNCTIONALITY | ACCESS| REQUIRMENTS|
+| ------- | ----- | ------------- | ------------- | -------------- |
+| *GET* | ```/api/projects``` | _Get a list if all projects_| _All users_|
 
 - **GET /api/projects:** Get a list of all projects. (Requires authentication)
 - **POST /api/projects:** Create a new project. (Requires authentication)
