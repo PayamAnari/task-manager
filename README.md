@@ -144,9 +144,9 @@ Route::middleware('auth:sanctum')->group(function () {
 | METHOD | ROUTE | FUNCTIONALITY | ACCESS| REQUIRMENTS|
 | ------- | ----- | ------------- | ------------- | -------------- |
 | *GET* | ```/api/tasks``` | _Get a list of all tasks_| _All users_| Authentication |
+| *POST* | ```/api/tasks``` | _Create a new task_| _All users_| Authentication |
 
 
-- **GET /api/tasks:** Get a list of all tasks. (Requires authentication)
 - **POST /api/tasks:** Create a new task. (Requires authentication)
 - **GET /api/tasks/{taskId}:** Get a single task by its ID. (Requires authentication)
 - **PUT /api/tasks/{taskId}:** Update an existing task. (Requires authentication)
